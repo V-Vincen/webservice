@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package com.example.wsservice.axis.wsdl;
+package com.example.wsservice.jax_ws.axis.wsdl;
 
-public class WebServiceIServiceSoapBindingStub extends org.apache.axis.client.Stub implements com.example.wsservice.axis.wsdl.WebServiceI {
+public class WebServiceIServiceSoapBindingStub extends org.apache.axis.client.Stub implements com.example.wsservice.jax_ws.axis.wsdl.WebServiceI {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();

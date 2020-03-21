@@ -1,4 +1,4 @@
-package com.example.wsservice.cxf.service;
+package com.example.wsservice.jax_ws.cxf.service;
 
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
 

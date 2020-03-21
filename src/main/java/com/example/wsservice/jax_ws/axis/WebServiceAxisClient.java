@@ -1,11 +1,15 @@
-package com.example.wsservice.axis;
+package com.example.wsservice.jax_ws.axis;
 
 
-import com.example.wsservice.axis.wsdl.WebServiceI;
-import com.example.wsservice.axis.wsdl.WebServiceIServiceLocator;
+import com.example.wsservice.jax_ws.axis.wsdl.WebServiceI;
+import com.example.wsservice.jax_ws.axis.wsdl.WebServiceIServiceLocator;
 
 import java.net.URL;
 
+/**
+ * @author vincent
+ * WebService 服务端，axis 开发
+ */
 public class WebServiceAxisClient {
     public static void main(String[] args) throws Exception {
         WebServiceIServiceLocator serviceLocator = new WebServiceIServiceLocator();

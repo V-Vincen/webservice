@@ -5,9 +5,9 @@
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
-package com.example.wsservice.axis.wsdl;
+package com.example.wsservice.jax_ws.axis.wsdl;
 
-public class WebServiceIServiceLocator extends org.apache.axis.client.Service implements com.example.wsservice.axis.wsdl.WebServiceIService {
+public class WebServiceIServiceLocator extends org.apache.axis.client.Service implements com.example.wsservice.jax_ws.axis.wsdl.WebServiceIService {
 
     public WebServiceIServiceLocator() {
     }
@@ -39,7 +39,7 @@ public class WebServiceIServiceLocator extends org.apache.axis.client.Service im
         WebServiceIPortWSDDServiceName = name;
     }
 
-    public com.example.wsservice.axis.wsdl.WebServiceI getWebServiceIPort() throws javax.xml.rpc.ServiceException {
+    public com.example.wsservice.jax_ws.axis.wsdl.WebServiceI getWebServiceIPort() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(WebServiceIPort_address);
@@ -50,9 +50,9 @@ public class WebServiceIServiceLocator extends org.apache.axis.client.Service im
         return getWebServiceIPort(endpoint);
     }
 
-    public com.example.wsservice.axis.wsdl.WebServiceI getWebServiceIPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public com.example.wsservice.jax_ws.axis.wsdl.WebServiceI getWebServiceIPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            com.example.wsservice.axis.wsdl.WebServiceIServiceSoapBindingStub _stub = new com.example.wsservice.axis.wsdl.WebServiceIServiceSoapBindingStub(portAddress, this);
+            com.example.wsservice.jax_ws.axis.wsdl.WebServiceIServiceSoapBindingStub _stub = new com.example.wsservice.jax_ws.axis.wsdl.WebServiceIServiceSoapBindingStub(portAddress, this);
             _stub.setPortName(getWebServiceIPortWSDDServiceName());
             return _stub;
         }
@@ -72,8 +72,8 @@ public class WebServiceIServiceLocator extends org.apache.axis.client.Service im
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (com.example.wsservice.axis.wsdl.WebServiceI.class.isAssignableFrom(serviceEndpointInterface)) {
-                com.example.wsservice.axis.wsdl.WebServiceIServiceSoapBindingStub _stub = new com.example.wsservice.axis.wsdl.WebServiceIServiceSoapBindingStub(new java.net.URL(WebServiceIPort_address), this);
+            if (com.example.wsservice.jax_ws.axis.wsdl.WebServiceI.class.isAssignableFrom(serviceEndpointInterface)) {
+                com.example.wsservice.jax_ws.axis.wsdl.WebServiceIServiceSoapBindingStub _stub = new com.example.wsservice.jax_ws.axis.wsdl.WebServiceIServiceSoapBindingStub(new java.net.URL(WebServiceIPort_address), this);
                 _stub.setPortName(getWebServiceIPortWSDDServiceName());
                 return _stub;
             }

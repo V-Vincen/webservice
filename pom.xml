@@ -15,6 +15,9 @@
 
         <cxf.version>3.3.4</cxf.version>
         <axis.version>1.4</axis.version>
+        <jettison.version>1.4.0</jettison.version>
+        <httpclient.version>4.5.10</httpclient.version>
+        <lombok.version>1.18.10</lombok.version>
     </properties>
 
     <dependencies>
@@ -32,6 +35,43 @@
             <version>${cxf.version}</version>
         </dependency>
         <!-- cxf 3.3.5 end -->
+
+
+        <!-- cxf-rt-transports-http -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>${cxf.version}</version>
+        </dependency>
+        <!-- cxf-rt-frontend-jaxrs -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>${cxf.version}</version>
+        </dependency>
+
+
+        <!--没有这两个依赖会：No message body writer has been found for class com.hgx.web.service.restful.bean.Student, ContentType: application/json-->
+        <!-- cxf-rt-rs-extension-providers -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-extension-providers</artifactId>
+            <version>${cxf.version}</version>
+        </dependency>
+        <!-- jettison -->
+        <dependency>
+            <groupId>org.codehaus.jettison</groupId>
+            <artifactId>jettison</artifactId>
+            <version>${jettison.version}</version>
+        </dependency>
+
+        <!--http客服端依赖 -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+
 
         <!-- axis 1.4 start -->
         <dependency>
@@ -66,6 +106,15 @@
             <version>${axis.version}</version>
         </dependency>
         <!-- axis 1.4 end -->
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
 
     </dependencies>
 

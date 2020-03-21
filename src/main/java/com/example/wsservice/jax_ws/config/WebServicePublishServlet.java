@@ -1,8 +1,7 @@
-package com.example.wsservice.config;
+package com.example.wsservice.jax_ws.config;
 
-import com.example.wsservice.cxf.service.WebServiceI;
-import com.example.wsservice.cxf.service.WebServiceImpl;
-import org.apache.cxf.endpoint.Server;
+import com.example.wsservice.jax_ws.cxf.service.WebServiceI;
+import com.example.wsservice.jax_ws.cxf.service.WebServiceImpl;
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
 
 import javax.servlet.ServletException;

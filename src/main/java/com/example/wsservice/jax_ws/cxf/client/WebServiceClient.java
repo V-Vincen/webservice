@@ -1,11 +1,12 @@
-package com.example.wsservice.cxf.client;
+package com.example.wsservice.jax_ws.cxf.client;
 
 
-import com.example.wsservice.cxf.client.wsdl.WebServiceI;
+import com.example.wsservice.jax_ws.cxf.client.wsdl.WebServiceI;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 
 /**
  * @author vincent
+ * WebService 服务端，cxf 开发
  */
 public class WebServiceClient {
     public static void main(String[] args) {
@@ -25,6 +26,4 @@ public class WebServiceClient {
         result = webServiceI.webserviceSave("Vincent", "24");
         System.out.println(result);
     }
-
-
 }

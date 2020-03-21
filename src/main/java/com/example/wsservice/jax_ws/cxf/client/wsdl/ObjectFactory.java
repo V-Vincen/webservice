@@ -1,5 +1,5 @@
 
-package com.example.wsservice.cxf.client.wsdl;
+package com.example.wsservice.jax_ws.cxf.client.wsdl;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
