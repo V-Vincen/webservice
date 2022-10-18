@@ -15,7 +15,7 @@
 
         <cxf.version>3.3.4</cxf.version>
         <axis.version>1.4</axis.version>
-        <jettison.version>1.4.0</jettison.version>
+        <jettison.version>1.5.1</jettison.version>
         <httpclient.version>4.5.10</httpclient.version>
         <lombok.version>1.18.10</lombok.version>
     </properties>
